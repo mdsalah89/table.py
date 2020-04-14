@@ -5,13 +5,13 @@ import pygame
 # Initializera PyGame
 pygame.init()
 
-# Creates a window for game
+# skapar ett ny fönster för spelet
 win = pygame.display.set_mode((1000, 1000))
 
-# Sets the title of window
+# välkommen titel för spelet
 pygame.display.set_caption('PyGame Tic-Tac-Toe')
 
-# Draws the game board
+# Dra spelbrädet
 first = pygame.draw.rect(win, (255, 255, 255), (25, 25, 150, 150))
 second = pygame.draw.rect(win, (255, 255, 255), (200, 25, 150, 150))
 third = pygame.draw.rect(win, (255, 255, 255), (375, 25, 150, 150))
@@ -38,10 +38,10 @@ twentythird = pygame.draw.rect(win, (255, 255, 255), (375, 725, 150, 150))
 twentyfourth = pygame.draw.rect(win, (255, 255, 255), (550, 725, 150, 150))
 twentyfifth = pygame.draw.rect(win, (255, 255, 255), (725, 725, 150, 150))
 
-# Sets first player's shape
+# Ställer in den första spelarens form
 draw_object = 'circle'
 
-# Used to see if space is taken
+# kolla om utrymme tas 
 first_open = True
 second_open = True
 third_open = True
@@ -374,5 +374,5 @@ while run:
                 twentyfifth_open = False
     pygame.display.update()
 
-# Closes game once loop is broken
+# slutar spelet när loop också slutar
 pygame.quit()
